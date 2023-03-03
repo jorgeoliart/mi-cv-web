@@ -5,10 +5,18 @@ body {
     padding: 0;
     width: 90%;
     margin: auto;
+    max-width: 900px;
+}
+
+main {
+    /* background-color: #e6eefc; */
+    padding: 0 1rem;
+    /* border: solid 0.6px #a9b5c7; */
+    margin-bottom: 1rem;
 }
 
 .header {
-    background-color: #5c5c5c;
+    background-color: #106ea1;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -20,17 +28,18 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
     padding: 10px 0;
     text-align: center;
     margin-bottom: 0.8rem;
+    color: #21130d;
 }
 
 h1, h2 {
@@ -56,11 +65,13 @@ h1, h2 {
     margin: 0;
     padding: 0;
     list-style: none;
+    color: #21130d;
 }
 
 .section li {
     margin: 0;
     padding: 5px 0;
+    font-size: 1rem;
 }
 
 .section p {
@@ -68,6 +79,33 @@ h1, h2 {
     padding: 0;
 }
 
-.titulo {
+.titulo, .cargo, .cert-name {
     font-weight: 600;
+}
+
+.nombre-org {
+    text-transform: uppercase;
+}
+
+.item-education, .item-trabajo, .item-cert {
+    margin-bottom: 0.9rem !important;
+}
+
+.item-trabajo p, .item-education p, .item-cert p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+
+.item-education .detail, #experiencia .detail {
+    padding-right: 9rem;
+    font-size: 0.9rem;
+    text-align: justify;
+    list-style: circle;
+    margin-left: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.year {
+    font-size: 0.9rem;
 }
